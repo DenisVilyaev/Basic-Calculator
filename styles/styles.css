@@ -42,20 +42,20 @@ html.dark body::before {
     padding: 8px 0 16px 0;
     color: var(--text);
     transition: color 0.4s;
+    max-width: 303px;
+    user-select: none;
 }
 
 .expression__history {
     font-size: 14px;
     color: #999;
     min-height: 20px;
-    user-select: none;
+    overflow-x: auto;
+    scrollbar-width: none;
 }
 
 .expression__result {
     font-size: 40px;
-    user-select: none;
-
-    max-width: 303px;
     overflow-x: auto;
     text-overflow: clip;
     justify-content: flex-start;
