@@ -1,0 +1,19 @@
+:root {
+  --bg-calc: #ffffff;
+  --btn-num: #f3f0ff;
+  --btn-func: #ede9fe;
+  --btn-op: #a78bfa;
+  --btn-equals: #8b5cf6;
+  --text: #1a1a1a;
+  --text-op: #ffffff;
+}
+
+html.dark {
+  --bg-calc: #1e1e2e;
+  --btn-num: #2a2a3e;
+  --btn-func: #252535;
+  --btn-op: #7c3aed;
+  --btn-equals: #5e23bb;
+  --text: #f0f0f0;
+  --text-op: #ffffff;
+}

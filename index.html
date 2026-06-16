@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/variables.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <script>
+      document.documentElement.classList.add("no-transition");
+      if (localStorage.getItem("theme") === "dark") {
+        document.documentElement.classList.add("dark");
+      }
+      document.documentElement.classList.remove("no-transition");
+    </script>
+  </head>
+  <body>
+    <div class="calculator">
+      <button class="btn--theme">🌙</button>
+      <div class="expression">
+        <div class="expression__history"></div>
+        <div class="expression__result">0</div>
+      </div>
+      <div class="btns__grid">
+        <button class="btn btn--op" data-action="percent">%</button>
+        <button class="btn btn--op" data-action="fraction">1/x</button>
+        <button class="btn btn--op" data-action="sqrt">&radic;x</button>
+        <button class="btn btn--op" data-action="square">x<sup>2</sup></button>
+
+        <button class="btn btn--func">CE</button>
+        <button class="btn btn--func">C</button>
+        <button class="btn btn--func">⌫</button>
+        <button class="btn btn--op">÷</button>
+
+        <button class="btn">7</button>
+        <button class="btn">8</button>
+        <button class="btn">9</button>
+        <button class="btn btn--op">×</button>
+
+        <button class="btn">4</button>
+        <button class="btn">5</button>
+        <button class="btn">6</button>
+        <button class="btn btn--op">-</button>
+
+        <button class="btn">1</button>
+        <button class="btn">2</button>
+        <button class="btn">3</button>
+        <button class="btn btn--op">+</button>
+
+        <button class="btn" data-action="toggle-sign">+/-</button>
+        <button class="btn btn--zero">0</button>
+        <button class="btn">.</button>
+        <button class="btn btn--equals">=</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
