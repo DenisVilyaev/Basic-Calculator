@@ -5,6 +5,7 @@
   --btn-op: #a78bfa;
   --btn-equals: #8b5cf6;
   --text: #1a1a1a;
+  --border: #1a1a1a;
   --text-op: #ffffff;
 }
 
@@ -15,5 +16,6 @@ html.dark {
   --btn-op: #7c3aed;
   --btn-equals: #5e23bb;
   --text: #f0f0f0;
+  --border: #635f67;
   --text-op: #ffffff;
 }
