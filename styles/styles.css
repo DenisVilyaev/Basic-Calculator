@@ -130,7 +130,8 @@ html.dark body::before {
 
 @media (max-width: 450px) {
     body {
-        min-height: 120vh;
+        align-items: flex-end;
+        padding-bottom: 20px;
     }
     .calculator {
         background-color: transparent;
