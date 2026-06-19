@@ -37,6 +37,8 @@ html.dark body::before {
     border-radius: 20px;
 }
 
+
+
 .expression {
     text-align: right;
     padding: 8px 0 16px 0;
@@ -85,6 +87,7 @@ html.dark body::before {
     width: 70px;
     height: 70px;
     border-radius: 20px;
+    border: 1px solid var(--text);
     cursor: pointer;
     font-size: 20px;
     font-weight: 600;
@@ -123,4 +126,14 @@ html.dark body::before {
 
 .no-transitions {
     transition: none !important;
+}
+
+@media (max-width: 450px) {
+    body {
+        min-height: 120vh;
+    }
+    .calculator {
+        background-color: transparent;
+        padding: 0;
+    }
 }
